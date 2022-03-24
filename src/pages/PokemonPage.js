@@ -46,8 +46,21 @@ const PokemonPage = ({ match }) => {
                                     </Card.Title>
                                 </Link>
                             </Card.Body>
+                            <Card.Text>                      
+                              
+                                  <Col>
+                                      <Card.Text>Height:{pokemonDetails.height}</Card.Text>
+                                  </Col>
+                                  <Col>
+                                      <Card.Text>Weight:{pokemonDetails.weight}</Card.Text>
+                                  </Col>
+                              
+                            </Card.Text>
                         </Card>
                     </Col>
+                    <Link to="/">
+                      <button className='load-more'>Back to pokedex</button>
+                    </Link>
                     <Col xs={12} sm={12} md={12} lg={12} xl={12}>
                         <Card className='p-3 rounded text-center shadow p-3 mb-5 bg-white' style={{ border: 'none' }}>
                             <Card.Body>
@@ -71,6 +84,7 @@ const PokemonPage = ({ match }) => {
                                             <Card.Text>Shiny Form</Card.Text>
                                         </Col>
                                     </Row>
+                        
                                     <Row className='mt-4'>
                                         <Col  xs={12} sm={12} md={12} lg={12} xl={12}>
                                             <div className='px-4 py-1 rounded' style={{ border: '1px black solid' }}>Abilities</div>
@@ -89,7 +103,10 @@ const PokemonPage = ({ match }) => {
                             </Card.Body>
                         </Card>
                     </Col>
+
+
                 </Row>
+                
             )}
         </>
     )
