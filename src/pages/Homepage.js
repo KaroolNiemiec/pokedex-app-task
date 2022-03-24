@@ -36,8 +36,8 @@ const Homepage = () => {
   return (
     <>
       <Header />
-      <form class="d-flex" onChange={searchChange} >
-        <input class="form-control me-2" type="search" placeholder="Search Pokemon" aria-label="Search" />
+      <form className="d-flex" onChange={searchChange} >
+        <input className="form-control me-2" type="search" placeholder="Search Pokemon" aria-label="Search" />
       </form>
       {loading ? (
         <Loader />
